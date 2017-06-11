@@ -21,6 +21,8 @@ This component lib is set up to use [styled-components](https://github.com/style
 ## Local Development
 
 ### Linter
+_**NOTE:** The linter will run against everything in the `lib` directory. I've added an initial `.eslintrc` file for some basic configuration. Feel free to edit or replace it as needed._
+
 Run once:
 ```
 $ npm run lint
@@ -32,6 +34,7 @@ $ npm run lint:watch
 ```
 
 ### Tests
+_**NOTE:** As there are no components added by default, there are no tests. But the infrastructure is set up for you to run your tests. This app is setup to use Mocha, Enzyme, and Expect. The `test` script is looking for test files with a `.spec.js` extension, e.g. MyComponent.spec.js._
 Run once:
 ```
 $ npm test
@@ -43,6 +46,8 @@ $ npm run test:watch
 ```
 
 ### Build
+_**NOTE:** When you run `build`, Babel will create a `build` directory. This is what your users will interact with when they use your library. Nothing in `lib` gets shipped with your published module._
+
 Run once:
 ```
 $ npm run build
@@ -70,6 +75,7 @@ $ npm set init.author.name "Your Name"
 $ npm set init.author.email "you@example.com"
 $ npm set init.author.url "http://yourblog.com"
 $ npm adduser
+$ npm publish
 ```
 
 ## Contributing
